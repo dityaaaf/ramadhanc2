@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .feature-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter-container {
+        width: 90%;
+    }
+}

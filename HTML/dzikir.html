@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dzikir Harian</title>
+
+    <link rel="stylesheet" href="../dzikir.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../animat">
+</head>
+<body>
+
+<header>
+    <h1>Dzikir Harian</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dzikir.html">Dzikir</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<main>
+    <section class="counter-section">
+
+        <div class="counter-container">
+            <h2 id="count">0</h2>
+            <p>Target: <span id="target">33</span></p>
+
+            <div class="button-group">
+                <button id="increment" class="btn-primary">+</button>
+                <button id="reset" class="btn-danger">Reset</button>
+            </div>
+
+            <div id="notification" class="notification"></div>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>Dzikir</p>
+</footer>
+
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/dzikir.js"></script>
+</body>
+</html>
