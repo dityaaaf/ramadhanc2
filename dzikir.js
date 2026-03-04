@@ -1,31 +1,22 @@
-const countElement = document.getElementById("count");
-const incrementBtn = document.getElementById("increment");
-const resetBtn = document.getElementById("reset");
+let count = 0;
+const target = 33;
+
+const counter = document.getElementById("counter");
+const addBtn = document.getElementById("addBtn");
+const resetBtn = document.getElementById("resetBtn");
 const notification = document.getElementById("notification");
 
-let count = loadCount();
-let target = 33;
-
-updateDisplay();
-
-function updateDisplay() {
-    countElement.textContent = count;
-}
-
-incrementBtn.addEventListener("click", () => {
+addBtn.addEventListener("click", () => {
     count++;
-    saveCount(count);
-    updateDisplay();
+    counter.textContent = count;
 
     if (count === target) {
-        notification.textContent = "🎉 Target tercapai!";
-        notification.style.color = "green";
+        notification.innerHTML = "🎉 Target Tercapai! MasyaAllah!";
     }
 });
 
 resetBtn.addEventListener("click", () => {
     count = 0;
-    saveCount(count);
-    updateDisplay();
+    counter.textContent = 0;
     notification.textContent = "";
 });
