@@ -24,24 +24,38 @@
 
         <div class="dzikir-card">
 
-            <h2>Hitung Dzikir Anda</h2>
+    <h2>Hitung Dzikir Anda</h2>
 
-            <div class="counter-box">
-                <span id="counter">0</span>
-            </div>
+    <!-- PILIH JENIS DZIKIR -->
+    <div class="target-select">
+        <label>Pilih Dzikir:</label>
+        <select id="dzikirType">
+            <option value="tasbih" data-target="33">Tasbih (33x)</option>
+            <option value="tahmid" data-target="33">Tahmid (33x)</option>
+            <option value="takbir" data-target="33">Takbir (34x)</option>
+            <option value="istighfar" data-target="100">Istighfar (100x)</option>
+            <option value="custom" data-target="0">Custom</option>
+        </select>
 
-            <div class="target-badge">
-                🎯 Target: <span id="target">33</span>
-            </div>
+        <input type="number" id="customTarget" placeholder="Masukkan target..." min="1">
+    </div>
 
-            <div class="button-group">
-                <button id="addBtn" class="btn-add">+</button>
-                <button id="resetBtn" class="btn-reset">Reset</button>
-            </div>
+    <div class="counter-box">
+        <span id="counter">0</span>
+    </div>
 
-            <div id="notification" class="notification"></div>
+    <div class="target-badge">
+        🎯 Target: <span id="target">33</span>
+    </div>
 
-        </div>
+    <div class="button-group">
+        <button id="addBtn" class="btn-add">+</button>
+        <button id="resetBtn" class="btn-reset">Reset</button>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+</div>
 
     </section>
 </main>

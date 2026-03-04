@@ -79,3 +79,21 @@ button:active {
     font-weight: bold;
     color: #2e7d32;
 }
+
+.target-select {
+    margin-bottom: 20px;
+}
+
+.target-select select,
+.target-select input {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.target-select input {
+    display: none;
+    width: 100%;
+}
